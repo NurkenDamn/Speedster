@@ -1,10 +1,10 @@
-import { extendTheme } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
+import { extendTheme } from '@chakra-ui/react';
+import { mode } from '@chakra-ui/theme-tools';
 
 const styles = {
-  global: (props : Record<string, any>) => ({
+  global: (props: Record<string, any>) => ({
     body: {
-      bg: mode("#f0e7db", "#202023")(props),
+      bg: mode('#B1D4E0', '#0C2D48')(props),
     },
   }),
 };
@@ -12,11 +12,11 @@ const styles = {
 const components = {
   Heading: {
     variants: {
-      "section-title": {
-        textDecoration: "underline",
+      'section-title': {
+        textDecoration: 'underline',
         fontSize: 20,
         textUnderlineOffset: 6,
-        textDecorationColor: "#525252",
+        textDecorationColor: '#525252',
         textDecorationThickness: 4,
         marginTop: 3,
         marginBottom: 4,
@@ -24,23 +24,23 @@ const components = {
     },
   },
   Link: {
-    baseStyle: (props : Record<string, any>) => ({
-      color: mode("#3d7aed", "#ff63c3")(props),
+    baseStyle: (props: Record<string, any>) => ({
+      color: mode('#3d7aed', '#ff63c3')(props),
       textUnderlineOffset: 3,
     }),
   },
 };
 
 const fonts = {
-  heading: "'M PLUS Rounded 1c'",
+  heading: 'M PLUS Rounded 1',
 };
 
 const colors = {
-  grassTeal: "#88ccca",
+  grassTeal: '#88ccca',
 };
 
 const config = {
-  initialColorMode: "dark",
+  initialColorMode: 'dark',
   useSystemColorMode: true,
 };
 

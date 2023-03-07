@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'M PLUS Rounded 1c', Mono, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -53,6 +53,11 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 }
 
 @media (prefers-color-scheme: light) {
