@@ -10,21 +10,44 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  Image,
   useColorModeValue
 } from '@chakra-ui/react'
 
-import Logotype from '../Logotype/Logotype'
+import { 
+  Logotype, 
+  ThemeToggleButton,
+  LinkItem,
+  CustomMenu  
+} from '../index'
 
-import logotype from '../../assets/logo.png'
+import { menuItems } from '../../constants/index'
 
 const Navbar = () => {
 
   return (
-    <Box as={'nav'}>
-      <Container display={'flex'}>
+    <Box 
+      as={'nav'}
+      w={'100%'}
+      css={{ backdropFilter: 'blur(10px)' }}
+      bg={useColorModeValue('#B1D4E0', '#0C2D48')}
+      zIndex={2}
+    >
+      <Container 
+        display={'flex'}
+        flexWrap={'wrap'}
+        alignItems={'center'}
+        justifyContent={'space-between'}
+        maxW={'container.lg'}
+        p={'2'}
+      >
         <Box p={'2'}>
           <Logotype />
+        </Box>
+        <Box p={'2'} flex={'1'} textAlign={'right'}>
+          <ThemeToggleButton />
+          <Box ml={2} display={'inline-block'}>
+            <CustomMenu items={menuItems} />
+          </Box>
         </Box>
       </Container>
     </Box>

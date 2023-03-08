@@ -1,12 +1,12 @@
-import { Container } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
 import Navbar from '../Navbar/Navbar';
 
 const App = () => {
   return (
-    <Container w={'100vw'} h={'100vh'}>
+    <Box w={'100vw'} h={'100vh'}>
       <Navbar />
-    </Container>
+    </Box>
   );
 };
 
