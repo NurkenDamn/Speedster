@@ -1,22 +1,12 @@
 import {
   Container,
   Box,
-  Heading,
-  Flex,
-  Stack,
-  Link,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
   useColorModeValue
 } from '@chakra-ui/react'
 
 import { 
   Logotype, 
   ThemeToggleButton,
-  LinkItem,
   CustomMenu  
 } from '../index'
 

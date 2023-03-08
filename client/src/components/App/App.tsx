@@ -1,6 +1,6 @@
-import { Box } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react'
 
-import Navbar from '../Navbar/Navbar';
+import { Navbar } from '../index'
 
 const App = () => {
   return (
