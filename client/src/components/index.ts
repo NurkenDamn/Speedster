@@ -4,6 +4,7 @@ import LinkItem from './LinkItem/LinkItem'
 import ThemeToggleButton from './ThemeToggleButton/ThemeToggleButton'
 import CustomMenu from './CustomMenu/CustomMenu'
 import Speedometer from './Speedometer/Speedometer'
+import SpeedParameters from './SpeedParamaters/SpeedParamters'
 
 export {
   Navbar,
@@ -11,5 +12,6 @@ export {
   LinkItem,
   ThemeToggleButton,
   CustomMenu,
-  Speedometer
+  Speedometer,
+  SpeedParameters
 }
