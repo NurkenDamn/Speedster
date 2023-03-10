@@ -1,12 +1,14 @@
 import { Box } from '@chakra-ui/react'
 
-import { Navbar } from '../index'
+import { AboutSection, Navbar, SpeedSection } from '../index'
 
 const App = () => {
 
   return (
-    <Box w={'100vw'} h={'100vh'}>
+    <Box>
       <Navbar />
+      <SpeedSection />
+      <AboutSection />
     </Box>
   );
 };

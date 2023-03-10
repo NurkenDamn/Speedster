@@ -23,8 +23,8 @@ const CustomMenu = ({ items } : CustomMenuProps) => {
       />
         <MenuList>
           {
-            items.map((item) => (
-              <MenuItem>
+            items.map((item, index) => (
+              <MenuItem key={index}>
                 {item}
               </MenuItem>
             ))

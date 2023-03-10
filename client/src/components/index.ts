@@ -5,6 +5,8 @@ import ThemeToggleButton from './ThemeToggleButton/ThemeToggleButton'
 import CustomMenu from './CustomMenu/CustomMenu'
 import Speedometer from './Speedometer/Speedometer'
 import SpeedParameters from './SpeedParamaters/SpeedParamters'
+import SpeedSection from './SpeedSection/SpeedSection'
+import AboutSection from './AboutSection/AboutSection'
 
 export {
   Navbar,
@@ -13,5 +15,7 @@ export {
   ThemeToggleButton,
   CustomMenu,
   Speedometer,
-  SpeedParameters
+  SpeedParameters,
+  SpeedSection,
+  AboutSection
 }

@@ -6,6 +6,7 @@ export interface SpeedometerProps {
 }
 
 const Speedometer = ({ percent } : SpeedometerProps) => {
+
   return (
       <GaugeChart
           id='gauge-chart'
@@ -16,7 +17,7 @@ const Speedometer = ({ percent } : SpeedometerProps) => {
           animate={true}
           needleColor={useColorModeValue('#B19FF9', '#299fff')}
           needleBaseColor={useColorModeValue('#A16AE8', '#053963')}
-          formatTextValue={value => value}
+          formatTextValue={value => value ? value + 'Mbps' : '...'}
       />
   );
 }

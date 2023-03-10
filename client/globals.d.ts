@@ -1,1 +1,1 @@
-declare module 'react-internet-meter';
+declare module 'react-internet-meter'
