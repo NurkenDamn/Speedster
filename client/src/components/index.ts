@@ -7,6 +7,9 @@ import Speedometer from './Speedometer/Speedometer'
 import SpeedParameters from './SpeedParamaters/SpeedParamters'
 import SpeedSection from './SpeedSection/SpeedSection'
 import AboutSection from './AboutSection/AboutSection'
+import ContactsSection from './ContactsSection/ContactsSection'
+import CTA from './CTA/CTA'
+import Footer from './Footer/Footer'
 
 export {
   Navbar,
@@ -17,5 +20,8 @@ export {
   Speedometer,
   SpeedParameters,
   SpeedSection,
-  AboutSection
+  AboutSection,
+  ContactsSection,
+  CTA,
+  Footer
 }

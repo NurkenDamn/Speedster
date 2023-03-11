@@ -1,4 +1,4 @@
 export const menuItems = [
   'About',
-  'Contact'
+  'Contacts'
 ]

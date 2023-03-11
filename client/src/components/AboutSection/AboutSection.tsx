@@ -2,6 +2,7 @@ import {
   Container,
   Box,
   Text,
+  Heading,
   useColorModeValue
 } from '@chakra-ui/react'
 
@@ -10,6 +11,7 @@ import { hoverAnimationCss } from '../../utils/animations'
 const AboutSection = () => {
   return (
     <Container
+      id={'about'}
       maxW={'container.md'}  
     >
       <Box
@@ -30,14 +32,14 @@ const AboutSection = () => {
         </Box>
       </Box>
       <Box pt={{base: '10px', md: '25px'}}>
-        <Text
+        <Heading
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily={'M PLUS Rounded 1c'}
-          fontWeight={'bold'}
+          as={'h3'}
+          variant={'section-title'}
           ml={{base: '15px', md: '55px'}}
         >
           About
-        </Text>
+        </Heading>
       </Box>
       <Box 
         display={'flex'}

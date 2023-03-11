@@ -10,8 +10,6 @@ import {
   CustomMenu  
 } from '../index'
 
-import { menuItems } from '../../constants/index'
-
 const Navbar = () => {
 
   return (
@@ -19,8 +17,9 @@ const Navbar = () => {
       as={'nav'}
       w={'100%'}
       css={{ backdropFilter: 'blur(10px)' }}
-      bg={useColorModeValue('#B1D4E0', '#0C2D48')}
+      bg={useColorModeValue('#ffffff40', '#20202380')}
       zIndex={2}
+      position={'fixed'}
     >
       <Container 
         display={'flex'}
@@ -28,7 +27,6 @@ const Navbar = () => {
         alignItems={'center'}
         justifyContent={'space-between'}
         maxW={'container.lg'}
-        p={'2'}
       >
         <Box p={'2'}>
           <Logotype />
@@ -36,7 +34,7 @@ const Navbar = () => {
         <Box p={'2'} flex={'1'} textAlign={'right'}>
           <ThemeToggleButton />
           <Box ml={2} display={'inline-block'}>
-            <CustomMenu items={menuItems} />
+            <CustomMenu />
           </Box>
         </Box>
       </Container>

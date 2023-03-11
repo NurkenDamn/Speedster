@@ -3,16 +3,13 @@ import {
   MenuItem,
   MenuList,
   MenuButton,
-  IconButton
+  IconButton,
+  Link
 } from '@chakra-ui/react'
 
 import { HamburgerIcon } from '@chakra-ui/icons'
 
-export interface CustomMenuProps {
-  items: string[]
-}
-
-const CustomMenu = ({ items } : CustomMenuProps) => {
+const CustomMenu = () => {
   return (
     <Menu isLazy>
       <MenuButton
@@ -22,13 +19,12 @@ const CustomMenu = ({ items } : CustomMenuProps) => {
         mt={4}
       />
         <MenuList>
-          {
-            items.map((item, index) => (
-              <MenuItem key={index}>
-                {item}
-              </MenuItem>
-            ))
-          }
+          <Link href={'#about'}>
+            <MenuItem>About</MenuItem>
+          </Link>
+          <Link href={'#contacts'}>
+            <MenuItem>Contacts</MenuItem>
+          </Link>
         </MenuList>
     </Menu>
   )

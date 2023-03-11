@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react'
 
-import { AboutSection, Navbar, SpeedSection } from '../index'
+import { Navbar, SpeedSection, AboutSection, ContactsSection, CTA, Footer } from '../index'
 
 const App = () => {
 
@@ -9,6 +9,9 @@ const App = () => {
       <Navbar />
       <SpeedSection />
       <AboutSection />
+      <CTA />
+      <ContactsSection />
+      <Footer />
     </Box>
   );
 };

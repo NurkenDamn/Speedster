@@ -25,12 +25,13 @@ const SpeedSection = () => {
 
   return (
     <Container
+      id={'speed'}
       maxW={'container.lg'}
       display={'flex'}
       flexDirection={'column'}
       justifyContent={'center'}
       alignItems={'center'}
-      py={'50px'}
+      py={'70px'}
     >
       {
         countInternetSpeed ?
