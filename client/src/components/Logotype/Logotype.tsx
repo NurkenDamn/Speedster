@@ -5,8 +5,6 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 
-import logotype from '../../assets/icon.png';
-
 const Logotype = () => {
 
   return (
@@ -19,7 +17,7 @@ const Logotype = () => {
       display={'inline-flex'}
       fontWeight={'bold'}
     >
-      <Image src={logotype} filter={useColorModeValue('', 'invert(100%)')} />
+      <Image src={'../../assets/icon.png'} filter={useColorModeValue('', 'invert(100%)')} />
       <Text
         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
         fontFamily={'M PLUS Rounded 1c'}
