@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a5e06bb-2ca6-4a72-83e9-2f8c9ae58e20/deploy-status)](https://app.netlify.com/sites/speedstertest/deploys)
 # Speedster
 Speedster - internet connection speed testing web application.
 
