@@ -4,14 +4,9 @@ import {
   Stat,
   StatLabel,
   StatNumber,
-  StatHelpText,
-  CircularProgress,
-  CircularProgressLabel,
-  useColorModeValue
+  StatHelpText
 } from '@chakra-ui/react'
 import { InfoIcon } from '@chakra-ui/icons'
-
-import { hoverAnimationCss } from '../../utils/animations'
 
 export interface SpeedParametersProps {
   speed: number
@@ -24,16 +19,8 @@ const SpeedParameters = ({ speed } : SpeedParametersProps) => {
       display={'flex'}
       flexDirection={{ base: 'column', md: 'row' }}
       maxW={'container.lg'}
-      css={hoverAnimationCss}
     >
       <Box>
-        <CircularProgress 
-          value={100} 
-          color={useColorModeValue('blue.800', 'blue.400')}
-          size={'205px'}
-        >
-          <CircularProgressLabel>100%</CircularProgressLabel>
-        </CircularProgress>
         <Stat 
           display={'flex'} 
           flexDirection={'column'} 
